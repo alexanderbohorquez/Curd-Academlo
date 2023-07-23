@@ -336,6 +336,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
+.bx-loader-alt{
+    font-size: 100px;
+    
+}
+
 .btn__form {
     min-width: 130px;
     height: 40px;

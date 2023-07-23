@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form"
 
 
+
 const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
 
     const { handleSubmit, register, reset } = useForm();
@@ -53,7 +54,7 @@ const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
                     {isVisible ?
                         <div className='status'>
                             <h3>{userSelected ? "Actualizando" : "Nuevo Usuario creado"}</h3>
-                            <i class='bx bx-x bx-flip-vertical' ></i>
+                            <i class='bx bx-loader-alt bx-spin'></i>
                         </div> : 
                     <form onSubmit={handleSubmit(submit)}>
                         <div className="input-container_m">
