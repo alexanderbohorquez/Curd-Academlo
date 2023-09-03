@@ -22,13 +22,13 @@ const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
         status()
         if (userSelected) {
             axios
-                .put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
+                .put(`https://crud-academlo-proyecto-2.onrender.com/users/${userSelected.id}/`, data)
                 .then(() => {
                     getUsers()
                 });
         } else {
             axios
-                .post("https://users-crud.academlo.tech/users/", data)
+                .post("https://crud-academlo-proyecto-2.onrender.com/users", data)
                 .then(() => {
                     getUsers();
                     reset(inputNull);
